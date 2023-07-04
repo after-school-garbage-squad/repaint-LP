@@ -1,0 +1,23 @@
+name: "budle visualizer"
+
+on:
+  workflow_run:
+    workflows:
+      - CI
+    types:
+      - completed
+
+jobs:
+  generate-visualizer:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: pnpm setup
+        uses: ./.github/actions/setup
+
+      - name: generate
+        run: pnpm gen:visualizer
+
+
