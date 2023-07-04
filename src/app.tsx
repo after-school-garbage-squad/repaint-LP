@@ -1,8 +1,11 @@
+import "@fontsource/zen-maru-gothic/japanese.css";
+import { Header } from "./components/Header";
+
 function App() {
   return (
-    <div className="animate-in fade-in zoom-in duration-700">
-      <p>test</p>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
