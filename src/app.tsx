@@ -1,5 +1,5 @@
 import "@fontsource/zen-maru-gothic/japanese.css";
-import { Header } from "./components/Header";
+import { Header } from "./ui/Header";
 
 function App() {
   return (
