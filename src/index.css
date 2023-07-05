@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --fontsource-display: optional;
+}
+
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+}

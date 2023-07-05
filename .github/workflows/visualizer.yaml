@@ -17,6 +17,9 @@ jobs:
       - name: pnpm setup
         uses: ./.github/actions/setup
 
+      - name: install
+        run: pnpm install
+
       - name: generate
         run: pnpm gen:visualizer
 
