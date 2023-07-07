@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 
-type ExplainCardProps = {
+export type ExplainCardProps = {
   cardIndex: number;
   text: string;
   icon: string;
@@ -15,7 +15,7 @@ export function ExplainCard({ cardIndex, text, icon }: ExplainCardProps) {
             "grid h-11 w-11 place-items-center rounded-br-2xl bg-orange"
           }
         >
-          <p className={"text-2xl text-blue"}>{cardIndex}</p>
+          <p className={"text-2xl font-bold text-blue"}>{cardIndex}</p>
         </div>
       </div>
       <div
