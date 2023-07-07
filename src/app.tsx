@@ -1,12 +1,16 @@
 import "@fontsource/zen-maru-gothic/japanese.css";
+import { AboutSection } from "./ui/AboutSection";
 import { Header } from "./ui/Header";
-import { Hero } from "./ui/Hero/hero.tsx";
+import { Hero } from "./ui/Hero";
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
+      <main>
+        <Hero />
+        <AboutSection />
+      </main>
     </>
   );
 }

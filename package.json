@@ -9,7 +9,7 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint src --ext ts,tsx --fix & pnpm fmt",
     "fmt": "prettier -w src",
-    "gen:visualizer": "vite-bundle-visualizer -o docs/stats.html",
+    "gen:visualizer": "vite-bundle-visualizer -o docs/index.html",
     "preview": "vite preview"
   },
   "dependencies": {
