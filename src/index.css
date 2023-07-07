@@ -8,4 +8,5 @@
 
 body {
   font-family: "Zen Maru Gothic", sans-serif;
+  box-sizing: border-box;
 }
