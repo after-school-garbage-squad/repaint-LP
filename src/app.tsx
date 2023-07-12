@@ -2,6 +2,7 @@ import "@fontsource/zen-maru-gothic/japanese.css";
 import { AboutSection } from "./ui/AboutSection";
 import { Header } from "./ui/Header";
 import { Hero } from "./ui/Hero";
+import { HowToUseSection } from "./ui/HowToUseSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main>
         <Hero />
         <AboutSection />
+        <HowToUseSection />
       </main>
     </>
   );
