@@ -23,7 +23,7 @@ export function ExplainCard({ cardIndex, text, icon }: ExplainCardProps) {
           "grid h-auto flex-auto grid-cols-[100%] grid-rows-[auto_1fr] place-items-center"
         }
       >
-        <p>{text}</p>
+        <p className={"px-2"}>{text}</p>
         <Icon className={"h-24 w-24"} icon={icon} />
       </div>
     </div>
