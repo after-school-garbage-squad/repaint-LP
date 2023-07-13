@@ -107,7 +107,7 @@ const stepCardList: StepCardProps[] = [
 
 export function HowToUseSection() {
   return (
-    <section className={"w-full"}>
+    <section id="howtouse" className={"w-full"}>
       <div className={"mx-auto max-w-[1200px] px-4"}>
         <h2 className={"mt-8 w-max border-b-2 border-pink px-2 text-2xl"}>
           アプリの使い方

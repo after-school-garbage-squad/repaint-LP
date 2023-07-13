@@ -1,6 +1,10 @@
 import { DesktopMenu, MobileMenu } from "./components";
 
-const menuList = ["アプリについて", "使い方", "ダウンロード"];
+const menuList = [
+  { href: "#about", label: "アプリについて" },
+  { href: "#howtouse", label: "使い方" },
+  { href: "#download", label: "ダウンロード" },
+];
 
 export function Header() {
   return (
