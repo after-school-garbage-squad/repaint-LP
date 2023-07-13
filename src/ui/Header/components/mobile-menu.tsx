@@ -23,7 +23,12 @@ export function MobileMenu({ menuList }: MobileMenuProps) {
           </button>
         </Trigger>
         <Portal>
-          <Content className={"mr-4 bg-white"} sideOffset={8}>
+          <Content
+            className={
+              "mr-4 bg-white animate-in zoom-in-95 slide-in-from-top-2 duration-75"
+            }
+            sideOffset={8}
+          >
             {menuList.map((item) => (
               <Menuitem item={item} key={item} />
             ))}
