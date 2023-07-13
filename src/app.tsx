@@ -1,5 +1,6 @@
 import "@fontsource/zen-maru-gothic/japanese.css";
 import { AboutSection } from "./ui/AboutSection";
+import { Footer } from "./ui/Footer/";
 import { Header } from "./ui/Header";
 import { Hero } from "./ui/Hero";
 import { HowToUseSection } from "./ui/HowToUseSection";
@@ -9,12 +10,15 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <Hero />
-        <AboutSection />
-        <HowToUseSection />
-        <LinkSection />
-      </main>
+      <div className="grid gap-16">
+        <main>
+          <Hero />
+          <AboutSection />
+          <HowToUseSection />
+          <LinkSection />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
