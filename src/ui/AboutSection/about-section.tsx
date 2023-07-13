@@ -1,3 +1,5 @@
+import { SectionLayout } from "../shared/SectionLayout";
+
 import { ExplainCard } from "./componets";
 
 import type { ExplainCardProps } from "./componets";
@@ -26,38 +28,31 @@ const explainList: ExplainCardProps[] = [
 
 export function AboutSection() {
   return (
-    <section className={"w-full"}>
-      <div className={"mx-auto max-w-[1200px] px-4"}>
-        <h2
-          id="about"
-          className={"mt-8 w-max border-b-2 border-pink px-2 text-2xl"}
-        >
-          アプリについて
-          <span className={"ml-3 hidden text-lg text-blue md:inline"}>
-            What is &quot;Repaint&quot;?
-          </span>
-        </h2>
-        <p className={"mt-4  px-4 "}>
-          Re:paintは、会場の各地を周り、モノクロの写真・絵を色づけていくアプリです。
-          <br />
-          なにげなく会場を周ることに楽しみを付け加えます。
-        </p>
-        <ul
-          className={
-            "mx-auto mt-16 flex w-max flex-col flex-wrap gap-8 md:w-full md:flex-row md:justify-between"
-          }
-        >
-          {explainList.map((index) => (
-            <li key={index.cardIndex}>
-              <ExplainCard
-                cardIndex={index.cardIndex}
-                text={index.text}
-                icon={index.icon}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+    <SectionLayout
+      title="アプリについて"
+      subTitle={'what is "Re:paint"?'}
+      sectionId="about"
+    >
+      <p className={"mt-4  px-4 "}>
+        Re:paintは、会場の各地を周り、モノクロの写真・絵を色づけていくアプリです。
+        <br />
+        なにげなく会場を周ることに楽しみを付け加えます。
+      </p>
+      <ul
+        className={
+          "m-auto mt-16 flex w-max flex-col flex-wrap justify-center gap-8 md:w-full md:flex-row"
+        }
+      >
+        {explainList.map((index) => (
+          <li key={index.cardIndex}>
+            <ExplainCard
+              cardIndex={index.cardIndex}
+              text={index.text}
+              icon={index.icon}
+            />
+          </li>
+        ))}
+      </ul>
+    </SectionLayout>
   );
 }
