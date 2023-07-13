@@ -26,6 +26,9 @@ const stepCardList: StepCardProps[] = [
           className={`${iconStyle}`}
           src={"/icon.png"}
           alt={"repaint icon"}
+          width={48}
+          height={48}
+          loading="lazy"
         />
       </div>
     ),
@@ -62,7 +65,8 @@ const stepCardList: StepCardProps[] = [
     children: (
       <img
         loading="lazy"
-        className="w-52"
+        width={208}
+        height={450}
         src="/Explain.svg"
         alt="smatphone screen"
       />
@@ -80,7 +84,8 @@ const stepCardList: StepCardProps[] = [
     children: (
       <img
         loading="lazy"
-        className="w-52"
+        width={208}
+        height={450}
         src="/Home.png"
         alt="smatphone screen"
       />
