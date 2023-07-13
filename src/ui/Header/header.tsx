@@ -10,8 +10,7 @@ export function Header() {
           "m-auto flex h-full w-full max-w-[1200px] items-center justify-between px-4"
         }
       >
-        {/*TODO : 画像のパスを修正*/}
-        <img src={"/Re_paint.svg"} alt={"Re:paint"} />
+        <img className="w-32" src={"/repaint-logo.svg"} alt={"Re:paint"} />
         <nav>
           <DesktopMenu menuList={menuList} />
           <MobileMenu menuList={menuList} />

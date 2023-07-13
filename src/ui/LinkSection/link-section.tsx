@@ -8,7 +8,7 @@ export function LinkSection() {
             How to use &quot;Repaint&quot;?
           </span>
         </h2>
-        <p className="mt-4 text-2xl">Coming Soon ...</p>
+        <p className="mt-4 text-xl">Coming Soon ...</p>
       </div>
     </section>
   );
