@@ -9,11 +9,9 @@ import {
   Trigger,
 } from "@radix-ui/react-dropdown-menu";
 
-type MobileMenuProps = {
-  menuList: string[];
-};
+import type { MenuProps } from "./types";
 
-export function MobileMenu({ menuList }: MobileMenuProps) {
+export function MobileMenu({ menuList }: MenuProps) {
   return (
     <div className={"block md:hidden"}>
       <Root>
@@ -29,8 +27,8 @@ export function MobileMenu({ menuList }: MobileMenuProps) {
             }
             sideOffset={8}
           >
-            {menuList.map((item) => (
-              <Menuitem item={item} key={item} />
+            {menuList.map((index) => (
+              <Menuitem {...index} key={index.href} />
             ))}
           </Content>
         </Portal>
@@ -39,10 +37,10 @@ export function MobileMenu({ menuList }: MobileMenuProps) {
   );
 }
 
-const Menuitem = memo<{ item: string }>(({ item }) => (
+const Menuitem = memo<{ label: string; href: string }>(({ href, label }) => (
   <Item className={"w-full p-2"}>
-    <a href={"/"} className={"block w-full text-center"}>
-      {item}
+    <a href={href} className={"block h-full w-full text-center"}>
+      {label}
     </a>
   </Item>
 ));

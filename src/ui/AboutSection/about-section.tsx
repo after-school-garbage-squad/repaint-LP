@@ -28,7 +28,10 @@ export function AboutSection() {
   return (
     <section className={"w-full"}>
       <div className={"mx-auto max-w-[1200px] px-4"}>
-        <h2 className={"mt-8 w-max border-b-2 border-pink px-2 text-2xl"}>
+        <h2
+          id="about"
+          className={"mt-8 w-max border-b-2 border-pink px-2 text-2xl"}
+        >
           アプリについて
           <span className={"ml-3 hidden text-lg text-blue md:inline"}>
             What is &quot;Repaint&quot;?
