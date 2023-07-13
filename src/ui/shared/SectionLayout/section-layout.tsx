@@ -18,7 +18,7 @@ export function SectionLayout({
         className={"mt-8 w-max border-b-2 border-pink px-2 text-2xl"}
       >
         {title}
-        <span className={"ml-3 hidden text-lg text-blue md:inline"}>
+        <span className={"ml-3 hidden text-lg text-gray-400 md:inline"}>
           {subTitle}
         </span>
       </h2>
