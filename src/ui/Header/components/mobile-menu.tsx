@@ -9,9 +9,6 @@ import {
   Trigger,
 } from "@radix-ui/react-dropdown-menu";
 
-
-
-
 import type { MenuProps } from "./types";
 
 export function MobileMenu({ menuList }: MenuProps) {
