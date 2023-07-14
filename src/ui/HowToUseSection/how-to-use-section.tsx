@@ -32,7 +32,7 @@ const stepCardList: StepCardProps[] = [
   },
   {
     number: 2,
-    text: <p>アプリの起動時ぶに、位置情報と通知の許可をお願いします。</p>,
+    text: <p>アプリの起動時に、位置情報と通知の許可をお願いします。</p>,
     children: (
       <div className="flex gap-2">
         <Icon
