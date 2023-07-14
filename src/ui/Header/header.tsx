@@ -14,7 +14,12 @@ export function Header() {
           "m-auto flex h-full w-full max-w-[1200px] items-center justify-between px-4"
         }
       >
-        <img className="w-32" src={"/repaint-logo.svg"} alt={"Re:paint"} />
+        <img
+          width={128}
+          height={48}
+          src={"/repaint-logo.svg"}
+          alt={"Re:paint"}
+        />
         <nav>
           <DesktopMenu menuList={menuList} />
           <MobileMenu menuList={menuList} />
