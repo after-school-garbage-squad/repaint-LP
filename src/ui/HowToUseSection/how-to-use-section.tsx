@@ -1,5 +1,7 @@
 import { Icon } from "@iconify/react";
 
+import { SectionLayout } from "../shared/SectionLayout";
+
 import { StepCard } from "./components";
 
 import type { StepCardProps } from "./components";
@@ -112,25 +114,18 @@ const stepCardList: StepCardProps[] = [
 
 export function HowToUseSection() {
   return (
-    <section className={"w-full"}>
-      <div className={"mx-auto max-w-[1200px] px-4"}>
-        <h2
-          id="howtouse"
-          className={"mt-8 w-max border-b-2 border-pink px-2 text-2xl"}
-        >
-          アプリの使い方
-          <span className={"ml-3 hidden text-lg text-blue md:inline"}>
-            How to use &quot;Repaint&quot;?
-          </span>
-        </h2>
-        <ul className={"mt-4 flex flex-col gap-8"}>
-          {stepCardList.map((index) => (
-            <li key={index.number}>
-              <StepCard {...index} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+    <SectionLayout
+      title="アプリの使いかた"
+      subTitle={'How to use "Re:paint"?'}
+      sectionId="howtouse"
+    >
+      <ul className={"mt-4 flex flex-col gap-8"}>
+        {stepCardList.map((index) => (
+          <li key={index.number}>
+            <StepCard {...index} />
+          </li>
+        ))}
+      </ul>
+    </SectionLayout>
   );
 }
