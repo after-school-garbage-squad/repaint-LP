@@ -1,6 +1,10 @@
 import { DesktopMenu, MobileMenu } from "./components";
 
-const menuList = ["アプリについて", "使い方", "ダウンロード"];
+const menuList = [
+  { href: "#about", label: "アプリについて" },
+  { href: "#howtouse", label: "使い方" },
+  { href: "#download", label: "ダウンロード" },
+];
 
 export function Header() {
   return (
@@ -10,7 +14,12 @@ export function Header() {
           "m-auto flex h-full w-full max-w-[1200px] items-center justify-between px-4"
         }
       >
-        <img className="w-32" src={"/repaint-logo.svg"} alt={"Re:paint"} />
+        <img
+          width={128}
+          height={48}
+          src={"/repaint-logo.svg"}
+          alt={"Re:paint"}
+        />
         <nav>
           <DesktopMenu menuList={menuList} />
           <MobileMenu menuList={menuList} />

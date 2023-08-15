@@ -1,5 +1,7 @@
 import { Icon } from "@iconify/react";
 
+import { SectionLayout } from "../shared/SectionLayout";
+
 import { StepCard } from "./components";
 
 import type { StepCardProps } from "./components";
@@ -26,13 +28,16 @@ const stepCardList: StepCardProps[] = [
           className={`${iconStyle}`}
           src={"/icon.png"}
           alt={"repaint icon"}
+          width={48}
+          height={48}
+          loading="lazy"
         />
       </div>
     ),
   },
   {
     number: 2,
-    text: <p>アプリの起動時ぶに、位置情報と通知の許可をお願いします。</p>,
+    text: <p>アプリの起動時に、位置情報と通知の許可をお願いします。</p>,
     children: (
       <div className="flex gap-2">
         <Icon
@@ -62,7 +67,8 @@ const stepCardList: StepCardProps[] = [
     children: (
       <img
         loading="lazy"
-        className="w-52"
+        width={208}
+        height={450}
         src="/Explain.svg"
         alt="smatphone screen"
       />
@@ -80,7 +86,8 @@ const stepCardList: StepCardProps[] = [
     children: (
       <img
         loading="lazy"
-        className="w-52"
+        width={208}
+        height={450}
         src="/Home.png"
         alt="smatphone screen"
       />
@@ -107,22 +114,18 @@ const stepCardList: StepCardProps[] = [
 
 export function HowToUseSection() {
   return (
-    <section className={"w-full"}>
-      <div className={"mx-auto max-w-[1200px] px-4"}>
-        <h2 className={"mt-8 w-max border-b-2 border-pink px-2 text-2xl"}>
-          アプリの使い方
-          <span className={"ml-3 hidden text-lg text-blue md:inline"}>
-            How to use &quot;Repaint&quot;?
-          </span>
-        </h2>
-        <ul className={"mt-4 flex flex-col gap-8"}>
-          {stepCardList.map((index) => (
-            <li key={index.number}>
-              <StepCard {...index} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+    <SectionLayout
+      title="アプリの使いかた"
+      subTitle={'How to use "Re:paint"?'}
+      sectionId="howtouse"
+    >
+      <ul className={"mt-4 flex flex-col gap-8"}>
+        {stepCardList.map((index) => (
+          <li key={index.number}>
+            <StepCard {...index} />
+          </li>
+        ))}
+      </ul>
+    </SectionLayout>
   );
 }
