@@ -38,6 +38,6 @@
     "tailwindcss-animate": "^1.0.6",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
-    "vite-bundle-visualizer": "^0.8.0"
+    "vite-bundle-visualizer": "^0.10.0"
   }
 }
