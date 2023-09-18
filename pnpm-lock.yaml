@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^4.3.9
     version: 4.3.9
   vite-bundle-visualizer:
-    specifier: ^0.8.0
-    version: 0.8.0
+    specifier: ^0.10.0
+    version: 0.10.0
 
 packages:
 
@@ -4111,8 +4111,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-bundle-visualizer@0.8.0:
-    resolution: {integrity: sha512-Z3RHuiqgxtNrCof1uINFel7VzESRYp3s9HK8Tg5JHXvcyVjIVIz6keUntna7CWtoNUIWUjaBwhmMCML9GM5qiw==}
+  /vite-bundle-visualizer@0.10.0:
+    resolution: {integrity: sha512-11AwKlkhvw6jjiGbTiCZqBSGg/FQDLc0mVcoLWVov2jU/Ban67l+Sk4Fa0Iyctb5sObqg/dA28HkKCEmSRjw9g==}
     hasBin: true
     dependencies:
       cac: 6.7.14
