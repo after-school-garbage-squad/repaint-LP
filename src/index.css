@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --fontsource-display: optional;
+@font-face {
+  font-family: "ZenMaru";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  src: local("ZenMaruGothic-Regular"),
+    url("/font/ZenMaruGothic-Regular-subsets.woff2") format("woff2"),
+    url("/font/ZenMaruGothic-Regular-subsets.woff") format("woff");
 }
 
 body {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: ZenMaru, sans-serif;
   box-sizing: border-box;
 }

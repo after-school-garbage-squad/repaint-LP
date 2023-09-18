@@ -1,4 +1,3 @@
-import "@fontsource/zen-maru-gothic/japanese.css";
 import { AboutSection } from "./ui/AboutSection";
 import { Footer } from "./ui/Footer/";
 import { Header } from "./ui/Header";
