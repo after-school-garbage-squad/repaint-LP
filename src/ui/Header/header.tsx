@@ -1,12 +1,10 @@
 import { DesktopMenu, MobileMenu } from "./components";
 
-const menuList = [
-  { href: "#about", label: "アプリについて" },
-  { href: "#howtouse", label: "使い方" },
-  { href: "#download", label: "ダウンロード" },
-];
+export type HeaderProps = {
+  menuList: { href: string; label: string }[];
+};
 
-export function Header() {
+export function Header({ menuList }: HeaderProps) {
   return (
     <header className={"fixed h-16 w-full bg-inherit"}>
       <div
@@ -20,6 +18,7 @@ export function Header() {
           src={"/repaint-logo.svg"}
           alt={"Re:paint"}
         />
+
         <nav>
           <DesktopMenu menuList={menuList} />
           <MobileMenu menuList={menuList} />

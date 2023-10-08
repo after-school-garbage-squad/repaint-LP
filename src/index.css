@@ -7,7 +7,8 @@
   font-weight: 400;
   font-style: normal;
   font-display: auto;
-  src: local("ZenMaruGothic-Regular"),
+  src:
+    local("ZenMaruGothic-Regular"),
     url("/font/ZenMaruGothic-Regular-subsets.woff2") format("woff2"),
     url("/font/ZenMaruGothic-Regular-subsets.woff") format("woff");
 }
