@@ -1,3 +1,4 @@
+import { Footer } from "../ui/Footer";
 import { Header } from "../ui/Header";
 import { ManualSection } from "../ui/ManualSection/manual-section";
 
@@ -16,6 +17,7 @@ export const Manual: React.FC = () => {
         <main className="mx-auto w-full max-w-[1200px]">
           <ManualSection />
         </main>
+        <Footer />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 export type ManualCardProps = {
   title: string;
-  text: string;
+  text?: string;
   children?: React.ReactNode;
 };
 
@@ -20,7 +20,7 @@ export const ManualCard: React.FC<ManualCardProps> = ({
           {title}
         </span>
       </div>
-      <div className={"mt-3"}>{text}</div>
+      <div className={"mt-3 whitespace-pre-wrap break-words"}>{text}</div>
       <div className={"mt-4 grid place-items-center"}>{children}</div>
     </div>
   );
