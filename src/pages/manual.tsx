@@ -1,4 +1,3 @@
-import { useTracking } from "../hooks/use-Tracking";
 import { Footer } from "../ui/Footer";
 import { Header } from "../ui/Header";
 import { ManualSection } from "../ui/ManualSection/manual-section";
@@ -11,7 +10,6 @@ const menuList = [
 ];
 
 export const Manual: React.FC = () => {
-  useTracking();
   return (
     <div className="grid h-screen min-h-full">
       <Header menuList={menuList} />

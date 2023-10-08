@@ -1,4 +1,3 @@
-import { useTracking } from "../hooks/use-Tracking";
 import { AboutSection } from "../ui/AboutSection";
 import { Footer } from "../ui/Footer";
 import { Header } from "../ui/Header";
@@ -14,7 +13,6 @@ const menuList = [
 ];
 
 function App() {
-  useTracking();
   return (
     <>
       <Header menuList={menuList} />
