@@ -7,6 +7,7 @@ import App from "./pages/app.tsx";
 
 import "./index.css";
 import { Manual } from "./pages/manual.tsx";
+import { Privacy } from "./pages/privacy.tsx";
 
 const route = createBrowserRouter([
   {
@@ -17,10 +18,14 @@ const route = createBrowserRouter([
     path: "/manual",
     element: <Manual />,
   },
+  {
+    path: "/privacy",
+    element: <Privacy />,
+  },
 ]);
 
 createRoot(document.querySelector("#root") as HTMLElement).render(
   <StrictMode>
     <RouterProvider router={route} />
-  </StrictMode>,
+  </StrictMode>
 );
