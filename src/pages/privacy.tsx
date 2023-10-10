@@ -4,9 +4,9 @@ import { Footer } from "../ui/Footer";
 import { Header } from "../ui/Header";
 
 const menuList = [
-  { href: "#about", label: "アプリについて" },
-  { href: "#howtouse", label: "使い方" },
-  { href: "#download", label: "ダウンロード" },
+  { href: "/#about", label: "アプリについて" },
+  { href: "/#howtouse", label: "使い方" },
+  { href: "/#download", label: "ダウンロード" },
   { href: "/manual", label: "マニュアル" },
 ];
 
@@ -15,13 +15,17 @@ export const Privacy: FC = () => {
     <>
       <Header menuList={menuList} />
       <div className="grid gap-16">
-        <main>
-          <h1>プライバシーポリシー</h1>
-          <section>
-            <h2>お客様から取得する情報</h2>
-            <section>
+        <main className="mx-auto mt-24 w-full max-w-[1200px] px-4">
+          <h1 className="mt-8 w-max border-b-2 border-pink px-2 text-2xl">
+            プライバシーポリシー
+          </h1>
+          <section className="mt-8 flex flex-col gap-4">
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              お客様から取得する情報
+            </h2>
+            <section className="mt-4">
               <p>当社は、お客様から以下の情報を取得します。</p>
-              <ul>
+              <ul className="list-inside list-disc pl-2">
                 <li>メールアドレス</li>
                 <li>写真や動画</li>
                 <li>
@@ -40,12 +44,14 @@ export const Privacy: FC = () => {
                 <li>お客様の位置情報</li>
               </ul>
             </section>
-            <h2>お客様の情報を利用する目的</h2>
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              お客様の情報を利用する目的
+            </h2>
             <section>
               <p>
                 当社は、お客様から取得した情報を、以下の目的のために利用します。
               </p>
-              <ul>
+              <ul className="list-inside list-disc pl-2">
                 <li>
                   当社サービスに関する登録の受付、お客様の本人確認、認証のため
                 </li>
@@ -64,19 +70,23 @@ export const Privacy: FC = () => {
                 <li>以上の他、当社サービスの提供、維持、保護及び改善のため</li>
               </ul>
             </section>
-            <h2>安全管理のために講じた措置</h2>
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              安全管理のために講じた措置
+            </h2>
             <section>
               <p>
                 当社が、お客様から取得した情報に関して安全管理のために講じた措置につきましては、末尾記載のお問い合わせ先にご連絡をいただきましたら、法令の定めに従い個別にご回答させていただきます。
               </p>
             </section>
-            <h2>第三者提供</h2>
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              第三者提供
+            </h2>
             <section>
               <p>
                 当社は、お客様から取得する情報のうち、個人データ（個人情報保護法第１６条第３項）に該当するものついては、あらかじめお客様の同意を得ずに、第三者（日本国外にある者を含みます。）に提供しません。
                 但し、次の場合は除きます。
               </p>
-              <ul>
+              <ul className="list-inside list-disc pl-2">
                 <li>個人データの取扱いを外部に委託する場合</li>
                 <li>当社や当社サービスが買収された場合</li>
                 <li>
@@ -87,7 +97,9 @@ export const Privacy: FC = () => {
                 </li>
               </ul>
             </section>
-            <h2>アクセス解析ツール</h2>
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              アクセス解析ツール
+            </h2>
             <section>
               <p>
                 当社は、お客様のアクセス解析のために、「Googleアナリティクス」を利用しています。Googleアナリティクスは、トラフィックデータの収集のためにCookieを使用しています。トラフィックデータは匿名で収集されており、個人を特定するものではありません。Cookieを無効にすれば、これらの情報の収集を拒否することができます。詳しくはお使いのブラウザの設定をご確認ください。Googleアナリティクスについて、詳しくは以下からご確認ください。
@@ -100,7 +112,9 @@ export const Privacy: FC = () => {
                 当社は、必要に応じて、このプライバシーポリシーの内容を変更します。この場合、変更後のプライバシーポリシーの施行時期と内容を適切な方法により周知または通知します。
               </p>
             </section>
-            <h2>お問い合わせ</h2>
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              お問い合わせ
+            </h2>
             <section>
               <p>
                 お客様の情報の開示、情報の訂正、利用停止、削除をご希望の場合は、以下のメールアドレスにご連絡ください。
@@ -111,11 +125,15 @@ export const Privacy: FC = () => {
                 この場合、必ず、運転免許証のご提示等当社が指定する方法により、ご本人からのご請求であることの確認をさせていただきます。なお、情報の開示請求については、開示の有無に関わらず、ご申請時に一件あたり1,000円の事務手数料を申し受けます。
               </p>
             </section>
-            <h2>事業者の氏名</h2>
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              事業者の氏名
+            </h2>
             <section>
               <p>放課後ガベージ部</p>
             </section>
-            <h2>事業者の住所</h2>
+            <h2 className="w-max border-b-2 border-purple px-2 text-xl">
+              事業者の住所
+            </h2>
             <section>
               <p>〒510-0294 三重県鈴鹿市白子町</p>
             </section>
