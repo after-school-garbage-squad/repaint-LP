@@ -5,7 +5,8 @@ export function HowToUseSection() {
     <SectionLayout
       title="アプリの使いかた"
       subTitle={'How to use "Re:paint"?'}
-      sectionId="howtouse">
+      sectionId="howtouse"
+    >
       <p className="mt-4 px-4">
         アプリの使い方は
         <a href="/manual" className="px-1 text-purple underline">

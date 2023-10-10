@@ -5,7 +5,8 @@ export function LinkSection() {
     <SectionLayout
       title="ダウンロード"
       subTitle={'Download "Re:paint"'}
-      sectionId="download">
+      sectionId="download"
+    >
       <p className="mt-4 text-xl">10/12リリース予定</p>
     </SectionLayout>
   );

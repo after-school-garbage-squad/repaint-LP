@@ -31,7 +31,8 @@ export function AboutSection() {
     <SectionLayout
       title="アプリについて"
       subTitle={'what is "Re:paint"?'}
-      sectionId="about">
+      sectionId="about"
+    >
       <p className={"mt-4  px-4 "}>
         このアプリは、イベント会場を周りながら「パレット」を集めて、写真の完成を目指すアプリです。
         <br />
@@ -40,7 +41,8 @@ export function AboutSection() {
       <ul
         className={
           "m-auto mt-16 flex w-max flex-col flex-wrap justify-center gap-8 md:w-full md:flex-row"
-        }>
+        }
+      >
         {explainList.map((index) => (
           <li key={index.cardIndex}>
             <ExplainCard
