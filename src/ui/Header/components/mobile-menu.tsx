@@ -23,7 +23,7 @@ export function MobileMenu({ menuList }: MenuProps) {
         <Portal>
           <Content
             className={
-              "mr-4 rounded-lg bg-white duration-75 animate-in zoom-in-95 slide-in-from-top-2"
+              "mr-4 rounded-lg bg-white shadow-xl duration-75 animate-in zoom-in-95 slide-in-from-top-2"
             }
             sideOffset={8}
           >

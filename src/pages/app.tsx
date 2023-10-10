@@ -7,7 +7,6 @@ import { LinkSection } from "../ui/LinkSection";
 
 const menuList = [
   { href: "#about", label: "アプリについて" },
-  { href: "#howtouse", label: "使い方" },
   { href: "#download", label: "ダウンロード" },
   { href: "/manual", label: "マニュアル" },
 ];

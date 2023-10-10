@@ -8,6 +8,8 @@ import App from "./pages/app.tsx";
 import "./index.css";
 import { Manual } from "./pages/manual.tsx";
 import { Privacy } from "./pages/privacy.tsx";
+import { Terms } from "./pages/terms.tsx";
+import { WebView } from "./pages/webview.tsx";
 
 const route = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const route = createBrowserRouter([
   {
     path: "/privacy",
     element: <Privacy />,
+  },
+  {
+    path: "/terms",
+    element: <Terms />,
+  },
+  {
+    path: "/webview",
+    element: <WebView />,
   },
 ]);
 
