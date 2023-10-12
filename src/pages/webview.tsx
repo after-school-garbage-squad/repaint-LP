@@ -1,9 +1,5 @@
-import { ManualSection } from "../ui/ManualSection/manual-section";
+import { MobileManual } from "../ui/MobileManual";
 
 export const WebView = () => {
-  return (
-    <div className={"mb-20"}>
-      <ManualSection />
-    </div>
-  );
+  return <MobileManual />;
 };
