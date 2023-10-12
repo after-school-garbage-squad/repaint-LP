@@ -1,18 +1,16 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { SectionLayout } from "../shared/SectionLayout";
+
+import { ManualCard } from "./components/manual-card";
+import { manualText } from "./manual";
 
 export const ManualSection: React.FC = () => {
   return (
-    <section title="マニュアル">
-      <h1 className="mx-2 mt-8 text-xl">アプリの使い方</h1>
-      <div className="mt-4 flex flex-col items-center">
-        <div className="flex justify-between">
-          <Icon icon="fluent-emoji:mobile-phone" className="text-6xl" />
-          <div>
-            <h2>アプリについて</h2>
-            <p>会場内を回ってパレットを集めよう！</p>
-          </div>
-        </div>
+    <SectionLayout title="マニュアル" subTitle="manual" sectionId="#manual">
+      <div className="mt-4 flex flex-col gap-4">
+        {manualText.map((manual) => (
+          <ManualCard key={manual.title} {...manual} />
+        ))}
       </div>
-    </section>
+    </SectionLayout>
   );
 };
