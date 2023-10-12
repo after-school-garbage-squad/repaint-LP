@@ -5,7 +5,7 @@ export function Footer() {
         <a href="/terms" className="underline duration-300 hover:text-purple">
           利用規約
         </a>
-        <a href="/policy" className="underline duration-300 hover:text-purple">
+        <a href="/privacy" className="underline duration-300 hover:text-purple">
           プライバシーポリシー
         </a>
       </div>
