@@ -1,19 +1,18 @@
-import { SectionLayout } from "../shared/SectionLayout";
-
-import { ManualCard } from "./components/manual-card";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const ManualSection: React.FC = () => {
   return (
-    <SectionLayout title="マニュアル" subTitle="manual" sectionId="#manual">
+    <section title="マニュアル">
+      <h1 className="mx-2 mt-8 text-xl">アプリの使い方</h1>
       <div className="mt-4 flex flex-col items-center">
-        <ManualCard title="title">
+        <div className="flex justify-between">
+          <Icon icon="fluent-emoji:mobile-phone" className="text-6xl" />
           <div>
-            <p>
-              このアプリは、イベント会場を周りながら「パレット」を集めて、写真の完成を目指すアプリです。
-            </p>
+            <h2>アプリについて</h2>
+            <p>会場内を回ってパレットを集めよう！</p>
           </div>
-        </ManualCard>
+        </div>
       </div>
-    </SectionLayout>
+    </section>
   );
 };
