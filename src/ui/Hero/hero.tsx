@@ -19,7 +19,7 @@ export function Hero() {
           <h1 className={"text-2xl"}>イベントにアソビ心を</h1>
           {searchParams.get("event_id") ? (
             <div className="flex flex-col items-center gap-6">
-              <p className={"text-xl"}>10月12日リリース予定</p>
+              <p className={"text-xl"}>10月18日リリース予定</p>
               {isMobile && (
                 <a
                   className={
