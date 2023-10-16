@@ -3,8 +3,8 @@ import { Header } from "../ui/Header";
 
 const menuList = [
   { href: "/#about", label: "アプリについて" },
+  { href: "/#howtouse", label: "アプリの使い方" },
   { href: "/#download", label: "ダウンロード" },
-  { href: "/manual", label: "マニュアル" },
 ];
 
 export const Terms = () => {
