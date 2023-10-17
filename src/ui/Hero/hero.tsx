@@ -34,7 +34,7 @@ export function Hero() {
               )}
             </div>
           ) : (
-            <p className={"text-xl"}>10月12日リリース予定</p>
+            <p className={"text-xl"}>10月18日リリース予定</p>
           )}
         </div>
       </div>
