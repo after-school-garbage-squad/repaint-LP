@@ -1,3 +1,5 @@
+import { ManualCard } from "../ManualSection/components/manual-card";
+import { manualText } from "../ManualSection/manual";
 import { SectionLayout } from "../shared/SectionLayout";
 
 export function HowToUseSection() {
@@ -7,13 +9,11 @@ export function HowToUseSection() {
       subTitle={'How to use "Re:paint"?'}
       sectionId="howtouse"
     >
-      <p className="mt-4 px-4">
-        アプリの使い方は
-        <a href="/manual" className="px-1 text-purple underline">
-          マニュアル
-        </a>
-        をご覧ください。
-      </p>
+      <div className="mt-4 flex flex-col gap-4">
+        {manualText.map((manual) => (
+          <ManualCard key={manual.title} {...manual} />
+        ))}
+      </div>
     </SectionLayout>
   );
 }

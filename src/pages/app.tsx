@@ -6,9 +6,9 @@ import { HowToUseSection } from "../ui/HowToUseSection";
 import { LinkSection } from "../ui/LinkSection";
 
 const menuList = [
-  { href: "#about", label: "アプリについて" },
-  { href: "#download", label: "ダウンロード" },
-  { href: "/manual", label: "マニュアル" },
+  { href: "/#about", label: "アプリについて" },
+  { href: "/#howtouse", label: "アプリの使い方" },
+  { href: "/#download", label: "ダウンロード" },
 ];
 
 function App() {
