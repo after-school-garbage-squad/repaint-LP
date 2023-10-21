@@ -1,7 +1,5 @@
 import { useSearchParams } from "react-router-dom";
 
-import { isMobile } from "react-device-detect";
-
 export function Hero() {
   const [searchParams] = useSearchParams();
   return (
