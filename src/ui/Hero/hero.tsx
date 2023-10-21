@@ -29,7 +29,7 @@ export function Hero() {
                     "event_id"
                   )}`}
                 >
-                  イベントに参加する
+                  {searchParams.get("event_id") ? "参加する" : "ダウンロード"}
                 </a>
               )}
             </div>
