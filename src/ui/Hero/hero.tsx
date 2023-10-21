@@ -20,7 +20,7 @@ export function Hero() {
           {searchParams.get("event_id") ? (
             <div className="flex flex-col items-center gap-6">
               <p className={"text-xl"}>10月21日本日リリース予定</p>
-              {isMobile && (
+              {/* {isMobile && (
                 <a
                   className={
                     "w-max rounded-xl bg-blue px-6 py-4 text-white shadow-lg hover:bg-blue/80"
@@ -31,7 +31,7 @@ export function Hero() {
                 >
                   イベントに参加する
                 </a>
-              )}
+              )} */}
             </div>
           ) : (
             <p className={"text-xl"}>10月21日本日リリース予定</p>
