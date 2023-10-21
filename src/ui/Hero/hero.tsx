@@ -16,9 +16,23 @@ export function Hero() {
         >
           <h1 className={"text-2xl"}>イベントにアソビ心を</h1>
           {searchParams.get("event_id") ? (
-            <p className={"text-xl"}>近日リリース予定</p>
+            <div className="flex flex-col items-center gap-6">
+              <p className={"text-xl"}>10月21日本日リリース予定</p>
+              {/* {isMobile && (
+                <a
+                  className={
+                    "w-max rounded-xl bg-blue px-6 py-4 text-white shadow-lg hover:bg-blue/80"
+                  }
+                  href={`repaint://app.repaint.asgs.dev/?event_id=${searchParams.get(
+                    "event_id"
+                  )}`}
+                >
+                  イベントに参加する
+                </a>
+              )} */}
+            </div>
           ) : (
-            <p className={"text-xl"}>近日リリース予定</p>
+            <p className={"text-xl"}>10月21日本日リリース予定</p>
           )}
         </div>
       </div>
