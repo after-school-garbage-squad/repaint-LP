@@ -24,7 +24,7 @@ export function Hero() {
                 className={
                   "w-max rounded-xl bg-blue px-6 py-4 text-white shadow-lg hover:bg-blue/80"
                 }
-                href={`repaint://app.repaint.asgs.dev/?event_id=${searchParams.get(
+                href={`https://app.repaint.asgs.dev/?event_id=${searchParams.get(
                   "event_id"
                 )}`}
               >
