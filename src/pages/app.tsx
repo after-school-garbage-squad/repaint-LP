@@ -3,6 +3,7 @@ import { Footer } from "../ui/Footer";
 import { Header } from "../ui/Header";
 import { Hero } from "../ui/Hero";
 import { HowToUseSection } from "../ui/HowToUseSection";
+import { JoinSection } from "../ui/JoinSection";
 import { LinkSection } from "../ui/LinkSection";
 
 const menuList = [
@@ -20,6 +21,7 @@ function App() {
           <Hero />
           <AboutSection />
           <HowToUseSection />
+          <JoinSection />
           <LinkSection />
         </main>
         <Footer />
