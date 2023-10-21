@@ -4,7 +4,7 @@ export type JoinManualCardProps = {
     children?: React.ReactNode;
   };
   
-  export const ManualCard: React.FC<JoinManualCardProps> = ({
+  export const JoinManualCard: React.FC<JoinManualCardProps> = ({
     title,
     children,
   }) => {
