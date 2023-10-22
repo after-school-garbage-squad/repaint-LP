@@ -1,5 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 
+import { isIOS } from "react-device-detect";
+
 export function Hero() {
   const [searchParams] = useSearchParams();
   return (
@@ -21,9 +23,13 @@ export function Hero() {
                 className={
                   "w-max rounded-xl bg-blue px-6 py-4 text-white shadow-lg hover:bg-blue/80"
                 }
-                href={`https://app.repaint.asgs.dev/?event_id=${searchParams.get(
-                  "event_id"
-                )}`}
+                href={
+                  isIOS
+                    ? "#join"
+                    : `https://app.repaint.asgs.dev/?event_id=${searchParams.get(
+                        "event_id"
+                      )}`
+                }
               >
                 {searchParams.get("event_id") ? "参加する" : "ダウンロード"}
               </a>
@@ -32,7 +38,7 @@ export function Hero() {
                 className={
                   "w-max rounded-xl bg-blue px-6 py-4 text-white shadow-lg hover:bg-blue/80"
                 }
-                href={`https://app.repaint.asgs.dev`}
+                href={isIOS ? "#join" : `https://app.repaint.asgs.dev`}
               >
                 ダウンロード
               </a>
