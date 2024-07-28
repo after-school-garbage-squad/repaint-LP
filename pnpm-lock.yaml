@@ -42,7 +42,7 @@ devDependencies:
     version: 4.1.1(react@18.3.1)
   '@types/node':
     specifier: ^20.8.3
-    version: 20.14.12
+    version: 20.14.13
   '@types/react':
     specifier: ^18.2.25
     version: 18.3.3
@@ -87,7 +87,7 @@ devDependencies:
     version: 5.5.4
   vite:
     specifier: ^4.4.10
-    version: 4.5.3(@types/node@20.14.12)
+    version: 4.5.3(@types/node@20.14.13)
   vite-bundle-visualizer:
     specifier: ^0.11.0
     version: 0.11.0
@@ -1119,8 +1119,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.14.12:
-    resolution: {integrity: sha512-r7wNXakLeSsGT0H1AU863vS2wa5wBOK4bWMjZz2wj+8nBx+m5PeIn0k8AloSLpRuiwdRQZwarZqHE4FNArPuJQ==}
+  /@types/node@20.14.13:
+    resolution: {integrity: sha512-+bHoGiZb8UiQ0+WEtmph2IWQCjIqg8MDZMAV+ppRRhUZnquF5mQkP/9vpSwJClEiSM/C7fZZExPzfU0vJTyp8w==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1289,7 +1289,7 @@ packages:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.5.7
-      vite: 4.5.3(@types/node@20.14.12)
+      vite: 4.5.3(@types/node@20.14.13)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -4167,7 +4167,7 @@ packages:
       - rollup
     dev: true
 
-  /vite@4.5.3(@types/node@20.14.12):
+  /vite@4.5.3(@types/node@20.14.13):
     resolution: {integrity: sha512-kQL23kMeX92v3ph7IauVkXkikdDRsYMGTVl5KY2E9OY4ONLvkHf04MDTbnfo6NKxZiDLWzVpP5oTa8hQD8U3dg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4195,7 +4195,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.14.12
+      '@types/node': 20.14.13
       esbuild: 0.18.20
       postcss: 8.4.40
       rollup: 3.29.4
